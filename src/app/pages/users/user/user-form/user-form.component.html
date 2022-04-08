@@ -1,27 +1,27 @@
 <div class="card w-100">
     <div class="card-body">
         <h1 class="card-title text-center">Cadastro de usuarios</h1>
-        <form formGroup="userForm">
+        <form [formGroup]="userForm">
             <div class="row my-4 align-items-center">
                 <div class="col-6">
                     <div class="form-floating col-12 my-4">
-                        <input type="text" class="form-control" formControlName="nome" id="floatingInput" placeholder="Digite seu nome">
+                        <input type="text" class="form-control" formControlName=nome id="nome" placeholder="Digite seu nome">
                         <label for="floatingInput">Nome</label>
                     </div>
                     <div class="form-floating">
-                        <input type="text" class="form-control" formControlName="sobrenome" id="floatingInput" placeholder="Digite seu sobrenome">
+                        <input type="text" class="form-control" formControlName="sobrenome" id="sobrename" placeholder="Digite seu sobrenome">
                         <label for="floatingInput">Sobrenome</label>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="row my-4 align-items-center">
                         <div class="form-floating my-4">
-                            <input type="text" class="form-control" formControlName="idade" id="floatingInput" placeholder="Digite sua idade">
+                            <input type="text" class="form-control" formControlName="idade" id="idade" placeholder="Digite sua idade">
                             <label for="floatingInput">Idade</label>
                         </div>
 
                         <div class="form-floating">
-                            <input type="text" class="form-control" formControlName="profissao" id="floatingInput" placeholder="Digite sua profissão">
+                            <input type="text" class="form-control" formControlName="profissao" id="profissao" placeholder="Digite sua profissão">
                             <label for="floatingInput">Profissão</label>
                         </div>
                     </div>
@@ -30,8 +30,8 @@
             <div class="row my-4">
                 <div class="form-group">
                     <div class="form-group col-12 mt-4">
-                        <button type="button" class="btn btn-outline-danger float-start">Cancelar</button>
-                        <button type="button" class="btn btn-outline-success float-end" (click)="createUser()">Enviar</button>
+                        <button type="button" class="btn btn-outline-danger float-start" routerLink="/">Cancelar</button>
+                        <button type="button" class="btn btn-outline-success float-end" (click)="actionButton()">Enviar</button>
                     </div>
                 </div>
             </div>

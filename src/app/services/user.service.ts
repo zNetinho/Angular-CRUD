@@ -12,7 +12,6 @@ export class UserService {
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
-      // 'Token': '123'
     })
   }
 
@@ -25,5 +24,17 @@ export class UserService {
   //enviando dados pro banco
   postUsers(user: User):Observable<User> {
     return this.httpClient.post<User>(this.apiURL, user, this.httpOptions);
+  }
+  // delete usauario por id
+  deleteUser(id: number):Observable<User> {
+    return this.httpClient.delete<User>(`${this.apiURL}/id/${id}`);
+  }
+  //metodo de editar ususario
+  updateUser(id: string, user:User):Observable<User> {
+    return this.httpClient.put<User>(`${this.apiURL}/id/${id}`, user, this.httpOptions);
+  }
+  //Listando usuario unico
+  getUser(id: string):Observable<User[]> {
+    return this.httpClient.get<User[]>(`${this.apiURL}/id/${id}`);
   }
 }
