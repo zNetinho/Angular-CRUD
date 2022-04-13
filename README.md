@@ -15,8 +15,17 @@ Projeto feito com "Angular CLI version 13.2.5.
 ## Requisitos para funcionamento
 
 -Node.js (rodar a aplicação)
+-install npm
 
-## Atualizar
-<p>-Fazer nova atualização permitindo buscar por "id" ou "nome".</p>
-<p>-Fazer paginal "Home".</p>
-<p>-Integrar a API a um banco de Dados</p>
+## para rodar o projeto
+clone o repositorio no github, copie o conteudo em uma pasta<br>
+abra o repositorio usando o Visual studio code<br>
+no terminal instale as dependencias utilizada com "npm install" e depois inicie o servidor "ng serve"<br>
+
+## O que ela faz
+
+ O projeto e um site de cadastro simples, mas pode ser redecorado de acordo com a necessidade<br>
+ ele cria o cadastro e faz um auto incremente de ID, e o mesmo também deleta o mesmo, salvando esses <br>
+ dados dentro de uma planilha do google como? simples, utilizei o site Sheetbest.com, ele transforma sua planilha <br>
+ em um Banco de dados onde gera uma API para se comunicar com o serviço, e claro que está conectada a uma conta teste <br>
+ mas temos noção de como e feita as requisições e como e feita a resposta de um servidor em uma required JSON
